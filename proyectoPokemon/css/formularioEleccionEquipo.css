@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'pokemonFont';
+    src: url('../font/pokemon/Pokemon%20Solid.ttf') format('truetype');
+}
+#videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;   
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+body {
+    margin: 0;
+    padding: 0;
+    cursor: url("../img/cursor.cur"),auto;
+}
+* {
+    font-family: 'pokemonFont', sans-serif;
+    color: black;
+}
+.container-grande {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%; 
+    height: 40%;
+    margin: 0 auto; 
+    margin-top: 5%;
+}
+
+.container-izquierda, .container-derecha {
+    width: 70%;
+    padding: 2%;
+    text-align: left;
+    border: 2px solid #fafafa10;
+    background: #fafafa10;
+    backdrop-filter: blur(0.6rem);
+   -webkit-backdrop-filter: blur(0.6rem);
+    border-radius: 15px;
+}
+
+input[type="text"] {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1px;
+    height: 50%;
+}
+
+select {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.boton-contenedor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.boton-contenedor button{
+    margin-top: 45%;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkred
+}
+
+.rojo{
+color:red;
+}

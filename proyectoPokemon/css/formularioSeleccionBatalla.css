@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'pokemonFont';
+    src: url('../font/pokemon/Pokemon%20Solid.ttf') format('truetype');
+}
+
+* {
+    font-family: 'pokemonFont', sans-serif;
+}
+#videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    margin-top: 18%;
+    color: white;
+    cursor: url("../img/cursor.cur"),auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.container-grande {
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    justify-content: center;
+}
+
+.container-izquierda, .container-derecha {
+    border-radius: 15px;
+    padding: 5%;
+}
+
+.mode_pve {
+    background-image: url(../img/modoPVE.gif);
+    background-size: cover;
+    color:white;
+}
+
+.mode_pvp {
+    background-image: url(../img/modoPVP.gif);
+    background-size: cover;
+    color: white;
+}
+
+button {
+    width: 300px;
+    height: 150px;
+    border-radius: 15px;
+    font-size: 40px;
+}
+
+.imagenLogoPokemon {
+    width: 400px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
